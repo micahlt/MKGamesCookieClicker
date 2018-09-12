@@ -244,6 +244,14 @@ target-densityDpi=device-dpi"/>
 	</div>
 
 </div>
-
+<script>// set interval
+var tid = setInterval(mycode, 30000);
+function mycode() {
+ga('send', 'event', 'category', 'action', {'nonInteraction': 1});
+}
+function abortTimer() { // to be called when you want to stop the timer
+  clearInterval(tid);
+}
+</script>
 </body>
 </html>
